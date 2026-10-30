@@ -4,6 +4,8 @@ Usuario: Luis Soto. Trabaja desde un iPad, en sesiones de Claude Code en la nube
 
 ## Qué hay en este repositorio
 - `.claude/skills/`: skills de diseño y animación de Emil Kowalski (`npx skills add emilkowalski/skill`). Versiones en `skills-lock.json`.
+- `.claude/skills/find-skills/`: busca skills nuevas (`npx skills add vercel-labs/skills -s find-skills`).
+- Al instalar skills, hacerlo en el proyecto (`-a claude-code --copy`, sin `-g`) y subirlas a GitHub: la máquina en la nube se borra y lo global se pierde.
 - `.mcp.json`: servidores MCP del proyecto.
   - `perplexity`: necesita la variable `PERPLEXITY_API_KEY` en el entorno de la nube.
   - `playwright`: navegador sin interfaz que usa el Chromium preinstalado (`/opt/pw-browsers/chromium`).
